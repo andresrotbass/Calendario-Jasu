@@ -688,8 +688,8 @@ function renderEdit(){
     nval=document.getElementById("ni").value.trim();
     if(!DATA[k(ey,em)])DATA[k(ey,em)]={};
     DATA[k(ey,em)][ed]={code:scode,note:nval||null};
-    saveData();
     closeEdit();render();
+    saveToCloud();
   };
 }
 function closeEdit(){document.getElementById("eov").classList.remove("show");}
